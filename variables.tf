@@ -13,3 +13,13 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+variable "key_name" {
+  description = "The pre-configured keys to use"
+  default     = "blahblah"
+}
+
+variable "security_groups" {
+  description = "EC2 security groups to apply"
+  default     = "Provisioned by Terraform"
+}
+
