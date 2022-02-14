@@ -19,7 +19,8 @@ variable "key_name" {
 }
 
 variable "security_groups" {
+  type = list(string)
   description = "EC2 security groups to apply"
-  default     = "Provisioned by Terraform"
+  default     = ["Provisioned by Terraform"]
 }
 
